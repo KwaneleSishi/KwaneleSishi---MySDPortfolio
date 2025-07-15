@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/profile-line.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+    <title>KwaneleSishi - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+
+      <div class="logo"><i class="ri-profile-line"></i>Kwanele Sishi</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#awards">Awards</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Kwanele Sishi</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/me.jpeg" alt="My profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Kwanele Sishi</h1>
+        <p class="section__text__p2">Software Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/KwaneleSishi_CV.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/kwanele-sishi-613b07268/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/KwaneleSishi'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/basic-ui.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p style="text-align: left;">
+              <strong>Mangosuthu University of Technology</strong><br />
+              Information Technology, Software Development<br />
+              2023 - Present<br /><br />
+              <strong>Velabahleke High School</strong><br />
+              National Senior Certificate (NSC)<br />
+              2018 - 2022
+            </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Focused and enthusiastic developer with a keen interest in Information Technology, Software Development and Artificial Intelligence.
+              By comprehensive exposure to the underlying concepts and applying them vividly to various projects, my love for these domains came into being.
+              I am a passionate individual who thrives to build and apply my skills to solve real-world industry problems.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#skills'"
+      />
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <p class="section__text__p1" style="margin-top: 50px;">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="skills-details-container">
+        <div class="about-containers">
+
+          <!-- Languages and Databases Section -->
+          <div class="details-container">
+            <h2 class="skills-sub-title">Programming Languages</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="https://www.vectorlogo.zone/logos/python/python-icon.svg"
+                  alt="Python icon"
+                  class="icon skill-icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Logo_C_sharp.svg"
+                  alt="C# icon"
+                  class="icon skill-icon"
+                />
+                <div>
+                  <h3>C#</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg"
+                  alt="HTML5 icon"
+                  class="icon skill-icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg"
+                  alt="CSS icon"
+                  class="icon skill-icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://www.vectorlogo.zone/logos/javascript/javascript-icon.svg"
+                  alt="JavaScript icon"
+                  class="icon skill-icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://www.vectorlogo.zone/logos/php/php-icon.svg"
+                  alt="PHP icon"
+                  class="icon skill-icon"
+                />
+                <div>
+                  <h3>PHP</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- Frameworks Section -->
+          <div class="details-container">
+            <h2 class="skills-sub-title">Frameworks</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="https://www.vectorlogo.zone/logos/ionicframework/ionicframework-icon.svg"
+                  alt="Ionic icon"
+                  class="icon skill-icon"
+                />
+                <div>
+                  <h3>Ionic</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              
+              <article>
+                <img
+                  src="https://www.vectorlogo.zone/logos/nodejs/nodejs-icon.svg"
+                  alt="Node.js icon"
+                  class="icon skill-icon"
+                />
+                <div>
+                  <h3>Node.js</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-icon.svg"
+                  alt="Bootstrap icon"
+                  class="icon skill-icon"
+                />
+                <div>
+                  <h3>Bootstrap</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg"
+                  alt="TensorFlow icon"
+                  class="icon skill-icon"
+                />
+                <div>
+                  <h3>TensorFlow</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg"
+                  alt="PyTorch icon"
+                  class="icon skill-icon"
+                />
+                <div>
+                  <h3>PyTorch</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://www.vectorlogo.zone/logos/opencv/opencv-icon.svg"
+                  alt="OpenCV icon"
+                  class="icon skill-icon"
+                />
+                <div>
+                  <h3>OpenCV</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg"
+                  alt="Scikit-learn icon"
+                  class="icon skill-icon"
+                />
+                <div>
+                  <h3>Scikit-learn</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- Tools Section -->
+          <div class="details-container">
+            <h2 class="skills-sub-title">Tools & Databases </h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg"
+                  alt="Git icon"
+                  class="icon skill-icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg"
+                  alt="Google Cloud icon"
+                  class="icon skill-icon"
+                />
+                <div>
+                  <h3>Google Cloud</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg"
+                  alt="Firebase icon"
+                  class="icon skill-icon"
+                />
+                <div>
+                  <h3>Firebase</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://www.vectorlogo.zone/logos/jupyter/jupyter-icon.svg"
+                  alt="Jupyter icon"
+                  class="icon skill-icon"
+                />
+                <div>
+                  <h3>Jupyter</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://www.vectorlogo.zone/logos/mysql/mysql-icon.svg"
+                  alt="MySQL icon"
+                  class="icon skill-icon"
+                />
+                <div>
+                  <h3>MySQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg"
+                  alt="Microsoft SQL Server icon"
+                  class="icon skill-icon"
+                />
+                <div>
+                  <h3>Microsoft SQL Server</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="awards">
+      <p class="section__text__p1">My Achievements</p>
+      <h1 class="title">Awards & Certificates</h1>
+      
+      <div class="certificates-container">
+        <!-- Certificate 1 -->
+        <div class="certificate-item">
+          <div class="certificate-img-container">
+            <img src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~WFT5YEQ67458/CERTIFICATE_LANDING_PAGE~WFT5YEQ67458.jpeg" 
+                alt="Certificate of Achievement" 
+                class="certificate-img"
+                data-pdf="assets/Coursera Certificate.pdf">
+            <div class="certificate-overlay">
+              <h3 class="certificate-title">Version Control</h3>
+              <p class="certificate-org">Google Certification</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Certificate 2 -->
+        <div class="certificate-item">
+          <div class="certificate-img-container">
+            <img src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~6GIFL3XMLP85/CERTIFICATE_LANDING_PAGE~6GIFL3XMLP85.jpeg" 
+                alt="Machine Learning Certificate" 
+                class="certificate-img"
+                data-pdf="assets/Introduction to Generative AI.pdf">
+            <div class="certificate-overlay">
+              <h3 class="certificate-title">AI & ML Fundamentals</h3>
+              <p class="certificate-org">Google Certification</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Certificate 3 -->
+        <div class="certificate-item">
+          <div class="certificate-img-container">
+            <img src="https://media.licdn.com/dms/image/sync/v2/D4D22AQG35ognfpkKZg/feedshare-shrink_800/B4DZS8K4jYHIAk-/0/1738323757573?e=1755734400&v=beta&t=TcbBESR8oMMeTXvWJ65k2TO9IAFBwo3y5lAmjlHRdtA" 
+                alt="LinkedIn Certification" 
+                class="certificate-img"
+                data-pdf="assets/CertificateOfCompletion_HTML CSS and JavaScript Building the Web.pdf">
+            <div class="certificate-overlay">
+              <h3 class="certificate-title">Web Development</h3>
+              <p class="certificate-org">LinkedIn Certification</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Certificate 4 -->
+        <div class="certificate-item">
+          <div class="certificate-img-container">
+            <img src="https://images.credly.com/size/340x340/images/e807f203-a235-4c69-b9ee-f31bf015af6f/image.png" 
+                alt="IBM certification" 
+                class="certificate-img"
+                data-pdf="assets/IBMDesign20250608-26-knlx43.pdf">
+            <div class="certificate-overlay">
+              <h3 class="certificate-title">IT Fundamentals</h3>
+              <p class="certificate-org">IBM SkillBuild</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Certificate Modal -->
+      <div id="certificate-modal" class="modal">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+          <iframe id="pdf-viewer" width="100%" height="100%" frameborder="0"></iframe>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="skills-details-container">
+        <div class="about-containers">
+          <!-- Project 1 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Terr.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="skills-sub-title project-title">My Virtual Terrarium</h2>
+             <p> 
+               A terrarium is a glass or plastic container that contains plants, soil, and 
+               sometimes other organisms. In this project you can drag and drop the plants to the jar in the center.      
+              </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/KwaneleSishi/Terrarium-HTML_CSS_JS'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://kwanelesishi.github.io/Terrarium-HTML_CSS_JS/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <!-- Project 2 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Preview (1).png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="skills-sub-title project-title">Calculator</h2>
+             <p> 
+               Standard Calculator,this calculator has only the basic mathmatic functions..   
+              </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/KwaneleSishi/Calculator-HTML_CSS_JS'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://kwanelesishi.github.io/Calculator-HTML_CSS_JS/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <!-- Project 3 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Terr.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="skills-sub-title project-title">My Virtual Terrarium</h2>
+             <p> 
+               A terrarium is a glass or plastic container that contains plants, soil, and 
+               sometimes other organisms. In this project you can drag and drop the plants to the jar in the center.      
+              </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://kwanelesishi.github.io/Terrarium-HTML_CSS_JS/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:kwanelesishi050509@gmail.com">kwanelesishi050509@gmail.com</a></p>
+        </div>
+
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/kwanele-sishi-613b07268/'">LinkedIn</a></p>
+        </div>
+
+        <div class="contact-info-container">
+          <i class="ri-phone-line"></i>
+          <p><a href="tel:+27656736202">065 673 6202</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright © 2023 SK. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
